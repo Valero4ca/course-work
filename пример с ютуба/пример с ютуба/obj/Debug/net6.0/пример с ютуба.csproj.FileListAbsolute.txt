@@ -1,0 +1,15 @@
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.csproj.AssemblyReference.cache
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.GeneratedMSBuildEditorConfig.editorconfig
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.AssemblyInfoInputs.cache
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.AssemblyInfo.cs
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.csproj.CoreCompileInputs.cache
+D:\course-work\пример с ютуба\пример с ютуба\bin\Debug\net6.0\пример с ютуба.exe
+D:\course-work\пример с ютуба\пример с ютуба\bin\Debug\net6.0\пример с ютуба.deps.json
+D:\course-work\пример с ютуба\пример с ютуба\bin\Debug\net6.0\пример с ютуба.runtimeconfig.json
+D:\course-work\пример с ютуба\пример с ютуба\bin\Debug\net6.0\пример с ютуба.dll
+D:\course-work\пример с ютуба\пример с ютуба\bin\Debug\net6.0\пример с ютуба.pdb
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.dll
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\refint\пример с ютуба.dll
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.pdb
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\пример с ютуба.genruntimeconfig.cache
+D:\course-work\пример с ютуба\пример с ютуба\obj\Debug\net6.0\ref\пример с ютуба.dll

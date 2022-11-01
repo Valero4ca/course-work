@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-27T17:45:02.990</Modified>
+      <Modified>2022-11-01T17:25:13.974</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-10-27T17:29:07.833</Modified>
+      <Modified>2022-11-01T17:12:58.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.runtimeconfig.json">
       <PackagePath>CourseWork.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.dll">
       <PackagePath>CourseWork.dll</PackagePath>
-      <Modified>2022-10-27T17:29:06.265</Modified>
+      <Modified>2022-11-01T17:25:12.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CourseWork.exe</PackagePath>
-      <Modified>2022-10-27T17:29:06.287</Modified>
+      <Modified>2022-11-01T17:25:12.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.10\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1063,7 +1063,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.deps.json">
       <PackagePath>CourseWork.deps.json</PackagePath>
-      <Modified>2022-10-27T17:45:02.761</Modified>
+      <Modified>2022-11-01T17:25:13.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.541\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
