@@ -1,14 +1,14 @@
-﻿//namespace CourseWork;
+﻿namespace CourseWork;
 
-//public partial class MainPage : ContentPage
-//{
-//	int count = 0;
+public partial class MainPage : ContentPage
+{
+	int count = 0;
 
-//	public MainPage()
-//	{
-//		InitializeComponent();
-//	}
-
+	public MainPage()
+	{
+		InitializeComponent();
+	}
+}
 //	private void OnCounterClicked(object sender, EventArgs e)
 //	{
 //		count++;
