@@ -43,20 +43,56 @@
 
             <Button Text="Демо"/>
 
-           
 
-                <Button Text="Добавить "/>
-                    
-                    <Button Text="Изменить"/>
-                        
-                        <Button Text="Удалить"/>
-                           
-                            <Button Text="Статистика"/>
+
         </VerticalStackLayout>
+        
         <VerticalStackLayout>
-            
+
+    <HorizontalStackLayout>
+
+                <Label Text="ID"/>
+                <Entry/>
+
+                <Label Text="Имя"/>
+                <Entry/>
+
+                <Label Text="Фамилия"/>
+                <Entry/>
+
+                <Label Text="Дата Рождения"/>
+                <Entry/>
+
+                <Label Text="Пол"/>
+                <Entry/>
+
+                <Label Text="Семейный Терапевт"/>
+
+            </HorizontalStackLayout>
+
+    <HorizontalStackLayout>
+             
+
+                    <Button Text="Добавить"/>
+                <Entry/>
+                <Button Text="Изменить"/>
+                <Entry/>
+
+                <Button Text="Удалить"/>
+                <Entry/>
+                <Button Text="Статистика"/>
+        
+      
+                <Entry/>
+            </HorizontalStackLayout>
+                
+
 
         </VerticalStackLayout>
+
+
+        
+
     </HorizontalStackLayout>
     </ContentPage>
             
