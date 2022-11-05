@@ -29,25 +29,25 @@
     <AppXManifest Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-02T17:32:12.561</Modified>
+      <Modified>2022-11-05T17:29:22.215</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-02T15:19:28.047</Modified>
+      <Modified>2022-11-05T17:29:21.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.runtimeconfig.json">
       <PackagePath>CourseWork.runtimeconfig.json</PackagePath>
-      <Modified>2022-10-27T17:29:07.623</Modified>
+      <Modified>2022-11-05T17:29:21.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.dll">
       <PackagePath>CourseWork.dll</PackagePath>
-      <Modified>2022-11-02T17:32:10.581</Modified>
+      <Modified>2022-11-05T17:29:19.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CourseWork.exe</PackagePath>
-      <Modified>2022-11-02T17:32:10.589</Modified>
+      <Modified>2022-11-05T17:29:19.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.10\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -965,6 +965,22 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2022-08-17T03:26:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\bogus\34.0.2\lib\net6.0\Bogus.dll">
+      <PackagePath>Bogus.dll</PackagePath>
+      <Modified>2022-03-27T20:01:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\communitytoolkit.maui\1.3.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+      <Modified>2022-09-16T08:12:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\communitytoolkit.maui.core\1.3.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+      <Modified>2022-09-16T08:12:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\communitytoolkit.mvvm\8.0.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2022-08-03T23:09:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Valeria Makarevich\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-02-24T00:12:18.000</Modified>
@@ -1063,7 +1079,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.deps.json">
       <PackagePath>CourseWork.deps.json</PackagePath>
-      <Modified>2022-11-02T17:32:12.353</Modified>
+      <Modified>2022-11-05T17:29:22.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.541\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

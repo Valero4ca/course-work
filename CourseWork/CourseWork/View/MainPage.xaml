@@ -7,7 +7,9 @@
                            VerticalOptions="Center">
         <VerticalStackLayout
             WidthRequest="250"
-            BackgroundColor="Transparent">
+            BackgroundColor="Transparent"
+            Spacing="10"
+            Margin="0,0,50,0">
             <Label Text="Поиск по базе"/>
             <Entry/>
             <Label Text="ID"/>
@@ -17,9 +19,7 @@
             <Label Text="Фамилия"/>
             <Entry/>
             <Label Text="Дата Рождения"/>
-            <DatePicker MinimumDate="{Binding MinDate}"
-            MaximumDate="{Binding MaxDate}"
-            Date="{Binding SelectedDate}" />
+            <DatePicker/>
 
             
 
@@ -49,41 +49,49 @@
         
         <VerticalStackLayout>
 
-    <HorizontalStackLayout>
+    <HorizontalStackLayout
+        Spacing="50">
 
                 <Label Text="ID"/>
-                <Entry/>
-
+               
                 <Label Text="Имя"/>
-                <Entry/>
+               
 
                 <Label Text="Фамилия"/>
-                <Entry/>
+                
 
                 <Label Text="Дата Рождения"/>
-                <Entry/>
+                
 
                 <Label Text="Пол"/>
-                <Entry/>
+                
 
                 <Label Text="Семейный Терапевт"/>
 
             </HorizontalStackLayout>
 
-    <HorizontalStackLayout>
-             
 
+
+            <Grid
+                
+                BackgroundColor="LightBlue"
+                HeightRequest="500">
+
+
+            </Grid>
+
+    <HorizontalStackLayout
+               
+        Spacing="50">
                     <Button Text="Добавить"/>
-                <Entry/>
+                
                 <Button Text="Изменить"/>
-                <Entry/>
-
+                
                 <Button Text="Удалить"/>
-                <Entry/>
+                
                 <Button Text="Статистика"/>
         
       
-                <Entry/>
             </HorizontalStackLayout>
                 
 
