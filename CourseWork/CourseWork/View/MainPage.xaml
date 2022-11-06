@@ -49,7 +49,7 @@
         
         <VerticalStackLayout>
 
-    <HorizontalStackLayout
+            <HorizontalStackLayout
         Spacing="50">
 
                 <Label Text="ID"/>
