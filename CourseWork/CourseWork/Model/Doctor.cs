@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CourseWork.Model
 {
-    internal class Doctor:PersonModel
+    public class Doctor : PersonModel
     {
         public string DoctorID { get; set; }
         public string Dolzhnost { get; set; }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace CourseWork.Model
 {
-    internal class PatientModel:PersonModel
+    public class PatientModel : PersonModel
     {
         public string PatientID { get; set; }
         public string Doctor{ get; set; }
-
     }
 }

@@ -6,7 +6,7 @@
 
 namespace CourseWork.Model
 {
-    internal class PersonModel
+    public class PersonModel
     {
         public string Name { get; set; }
         public string Surname { get; set; }

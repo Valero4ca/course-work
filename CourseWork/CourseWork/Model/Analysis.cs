@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace CourseWork.Model
 {
-    internal class Analysis: PersonModel
+    public class Analysis
     {
-        public DateTime  Analiza{ get; set; }
+        public DateTime Analiza{ get; set; }
         public string PatientID { get; set; }
         public string Doctor { get; set; }
         public string Pocazateli { get; set; }
 
         public float Obshchiyanaliz { get; set; }
-    public float Obshchiybilirybin { get; set; }
-public float Nepryamoybilirybin  { get; set; }
-public float Pryamoybilirybin{ get; set; }
-public float Kholestirin { get; set; }
-public float Glukoza{ get; set; }
+        public float Obshchiybilirybin { get; set; }
+        public float Nepryamoybilirybin  { get; set; }
+        public float Pryamoybilirybin{ get; set; }
+        public float Kholestirin { get; set; }
+        public float Glukoza{ get; set; }
 
     }
 }

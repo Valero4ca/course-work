@@ -1,11 +1,12 @@
-﻿namespace CourseWork;
+﻿using CourseWork.ViewModel;
+
+namespace CourseWork;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
-	public MainPage()
+	public MainPage(PatientViewModel patientViewModel)
 	{
 		InitializeComponent();
+		BindingContext = patientViewModel;
 	}
 }
