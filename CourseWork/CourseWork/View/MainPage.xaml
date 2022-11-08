@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:CourseWork.Model"
+             xmlns:viewmodel="clr-namespace:CourseWork.ViewModel"
+             x:DataType="viewmodel:PatientViewModel"
              x:Class="CourseWork.MainPage">
 
     <HorizontalStackLayout HorizontalOptions="Center"
@@ -21,8 +24,6 @@
             <Label Text="Дата Рождения"/>
             <DatePicker/>
 
-            
-
             <Picker Title="Пол">
                 <Picker.Items>
                     <x:String>Женский</x:String>
@@ -30,77 +31,59 @@
                 </Picker.Items>
             </Picker>
 
-           
-
             <Picker Title="Семейный Терапевт">
                 <Picker.Items>
                     <x:String>Горбачева Елена Петровна</x:String>
                     <x:String>Кожурова Виктория Михайловна</x:String>
                     <x:String>Юркевич Наталья Александровна</x:String>
-                    
+
                 </Picker.Items>
             </Picker>
 
-            <Button Text="Демо"/>
+           <Button Text="Демо"
+                   Command="{Binding StartDemoCommand}"
+                   IsEnabled="{Binding IsNotBusy}"/>
 
+         </VerticalStackLayout>
 
-
-        </VerticalStackLayout>
-        
         <VerticalStackLayout>
 
-            <HorizontalStackLayout
-        Spacing="50">
-
-                <Label Text="ID"/>
-               
-                <Label Text="Имя"/>
-               
-
-                <Label Text="Фамилия"/>
-                
-
-                <Label Text="Дата Рождения"/>
-                
-
-                <Label Text="Пол"/>
-                
-
-                <Label Text="Семейный Терапевт"/>
-
+            <HorizontalStackLayout  WidthRequest="1040">
+                <Grid ColumnDefinitions="*,*,*,*,*,*">
+                    <Label   Grid.Column="0" Text="ID"/>
+                <Label Grid.Column="1" Text="Имя"/>
+                <Label Grid.Column="2" Text="Фамилия"/>
+                <Label  Grid.Column="3" Text="Дата Рождения"/>
+                <Label Grid.Column="4" Text="Пол"/>
+                <Label  Grid.Column="5" Text="Семейный Терапевт"/>
+                    <Gried/>
             </HorizontalStackLayout>
 
+            <CollectionView WidthRequest="1040"
+                            HeightRequest="600"
+                            ItemsSource="{Binding Patient}">
+                <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:PatientModel">
+                    <Grid ColumnDefinitions="*,*,*,*,*,*">
+                        <Label BackgroundColor="Red"  Grid.Column="0" Text="{Binding PatientID}"/>
+                        <Label  BackgroundColor="Green" Grid.Column="1" Text="{Binding Name}"/>
+                        <Label  BackgroundColor="Yellow" Grid.Column="2" Text="{Binding Surname}"/>
+                        <Label  BackgroundColor="Pink" Grid.Column="3" Text=""/>
+                        <Label  BackgroundColor="Khaki" Grid.Column="4" Text=""/>
+                        <Label BackgroundColor="Blue" Grid.Column="5" Text=""/>
+                    </Grid>
+                </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-
-            <Grid
-                
-                BackgroundColor="LightBlue"
-                HeightRequest="500">
-
-
-            </Grid>
-
-    <HorizontalStackLayout
-               
-        Spacing="50">
-                    <Button Text="Добавить"/>
-                
+            <HorizontalStackLayout Spacing="50">
+                <Button Text="Добавить"/>
                 <Button Text="Изменить"/>
-                
                 <Button Text="Удалить"/>
-                
                 <Button Text="Статистика"/>
-        
-      
+
             </HorizontalStackLayout>
-                
-
-
         </VerticalStackLayout>
-
-
-        
-
     </HorizontalStackLayout>
-    </ContentPage>
+ </ContentPage>
             
