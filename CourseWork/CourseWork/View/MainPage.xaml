@@ -48,8 +48,9 @@
 
         <VerticalStackLayout>
 
-            <HorizontalStackLayout>
-                <Grid WidthRequest="1040"
+            <HorizontalStackLayout >
+                <Grid
+                    WidthRequest="1040"
                     ColumnDefinitions="*,*,*,*,*,*">
                     <Label   Grid.Column="0" Text="ID"/>
                 <Label Grid.Column="1" Text="Имя"/>
@@ -62,16 +63,16 @@
 
             <CollectionView WidthRequest="1040"
                             HeightRequest="600"
-                            ItemsSource="{Binding Patient}">
+                            ItemsSource="{Binding Patients}">
                 <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:PatientModel">
                     <Grid ColumnDefinitions="*,*,*,*,*,*">
                         <Label BackgroundColor="Red"  Grid.Column="0" Text="{Binding PatientID}"/>
                         <Label  BackgroundColor="Green" Grid.Column="1" Text="{Binding Name}"/>
                         <Label  BackgroundColor="Yellow" Grid.Column="2" Text="{Binding Surname}"/>
-                        <Label  BackgroundColor="Pink" Grid.Column="3" Text=""/>
-                        <Label  BackgroundColor="Khaki" Grid.Column="4" Text=""/>
-                        <Label BackgroundColor="Blue" Grid.Column="5" Text=""/>
+                            <Label  BackgroundColor="Pink" Grid.Column="3" Text="{Binding DateofBirth}"/>
+                            <Label  BackgroundColor="Khaki" Grid.Column="4" Text="{Binding  }"/>
+                            <Label BackgroundColor="Blue" Grid.Column="5" Text="{Binding }"/>
                     </Grid>
                 </DataTemplate>
                 </CollectionView.ItemTemplate>

@@ -7,7 +7,7 @@ namespace CourseWork.ViewModel
     public partial class PatientViewModel : BaseViewModel
     {
 
-        public ObservableCollection<PatientModel> Patient { get; set; } = new();
+        public ObservableCollection<PatientModel> Patients { get; set; } = new();
         [RelayCommand]
         void StartDemo()
         {
@@ -19,7 +19,7 @@ namespace CourseWork.ViewModel
             patient.PatientID = "10";
             patient.Name = "Nikita";
             patient.Surname = "Laboda";
-            //Patients.Add(patient);
+            Patients.Add(patient);
         }
     }
 }
