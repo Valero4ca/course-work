@@ -48,15 +48,16 @@
 
         <VerticalStackLayout>
 
-            <HorizontalStackLayout  WidthRequest="1040">
-                <Grid ColumnDefinitions="*,*,*,*,*,*">
+            <HorizontalStackLayout>
+                <Grid WidthRequest="1040"
+                    ColumnDefinitions="*,*,*,*,*,*">
                     <Label   Grid.Column="0" Text="ID"/>
                 <Label Grid.Column="1" Text="Имя"/>
                 <Label Grid.Column="2" Text="Фамилия"/>
                 <Label  Grid.Column="3" Text="Дата Рождения"/>
                 <Label Grid.Column="4" Text="Пол"/>
                 <Label  Grid.Column="5" Text="Семейный Терапевт"/>
-                    <Gried/>
+                    </Grid>
             </HorizontalStackLayout>
 
             <CollectionView WidthRequest="1040"
