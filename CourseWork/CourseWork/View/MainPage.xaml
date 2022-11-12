@@ -63,15 +63,16 @@
 
             <CollectionView WidthRequest="1040"
                             HeightRequest="600"
-                            ItemsSource="{Binding Patients}">
+                            ItemsSource="{Binding Patients}"
+                            SelectionMode="Single">
                 <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:PatientModel">
                     <Grid ColumnDefinitions="*,*,*,*,*,*">
                         <Label BackgroundColor="Red"  Grid.Column="0" Text="{Binding PatientID}"/>
                         <Label  BackgroundColor="Green" Grid.Column="1" Text="{Binding Name}"/>
                         <Label  BackgroundColor="Yellow" Grid.Column="2" Text="{Binding Surname}"/>
-                            <Label  BackgroundColor="Pink" Grid.Column="3" Text="{Binding DateofBirth}"/>
-                            <Label  BackgroundColor="Khaki" Grid.Column="4" Text="{Binding  }"/>
+                            <Label  BackgroundColor="Pink" Grid.Column="3" Text="{Binding DateofBirth,StringFormat='0:dd/MM/yyy}'"/>
+                            <Label  BackgroundColor="Khaki" Grid.Column="4" Text="{Binding   }"/>
                             <Label BackgroundColor="Blue" Grid.Column="5" Text="{Binding }"/>
                     </Grid>
                 </DataTemplate>
@@ -81,7 +82,9 @@
             <HorizontalStackLayout Spacing="50">
                 <Button Text="Добавить"/>
                 <Button Text="Изменить"/>
-                <Button Text="Удалить"/>
+                <Button Text="Удалить"
+                        Command="{Binding StartDemoCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="Статистика"/>
 
             </HorizontalStackLayout>
