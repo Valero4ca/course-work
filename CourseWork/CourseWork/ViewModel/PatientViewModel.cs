@@ -26,52 +26,42 @@ namespace CourseWork.ViewModel
             }
 
             Array gender_array = Enum.GetValues(typeof(Gender));
-            Gender random_gender = (Gender)gender_array.GetValue(new.Random().Next(gender_array.Length));
+            Gender random_gender = (Gender)gender_array.GetValue(new Random().Next(gender_array.Length));
 
             Faker<PatientModel> patient = new Faker<PatientModel>()
             .StrictMode(true)
-            .RuleFor(c => c.PatientID, f => new Random().Next().ToString().ToUpper())
-            .RuleFor(c => c.Name, f => f.Name.FirstName())
-            .RuleFor(c => c.Surname, f => f.Name.LastName())
-            .RuleFor(c => c.DateofBirth, f => f.Date.Between(new DateTime(1914, 1, 1), new DateTime(2004, 1, 1))
-            .RuleFor(c => c.Gender, f => "Gender")
-            .RuleFor(c => c.Doctor, f => "Валерьянов В.И.");
+            .RuleFor(c => c.PatientID, f => (new Random().Next().ToString("X8").ToUpper()))
+            .RuleFor(c => c.Name, f => f.Name.FirstName(random_gender))
+            .RuleFor(c => c.Surname, f => f.Name.LastName(random_gender))
+            .RuleFor(c => c.DateofBirth, f => f.Date.Between(new DateTime(1914, 1, 1), new DateTime(2004, 1, 1)))
+            .RuleFor(c => c.Gender, f => random_gender.ToString())
+            .RuleFor(c => c.Doctor, f => "Петров И.А.");
 
 
             Patients.Add(patient);
         }
-
         [RelayCommand]
         void DeletePatient()
 
         {
-            if(IsBusy)
+            if (IsBusy)
+            {
+                return;
+            }
+
+
+            if(Patients.Count==0)
             {
                 return;
             }
             Patients.Remove(selectedPatient);
         }
-
-
-
-
-
-
-
-
     }
-    [RelayCommand]
-
-    void DeletePatient()
-    {
-        if (IsBusy)
-        {
-            return;
-        }
-        Patients.Remove(selectedPatient);
-    }
-
 }
+     
+   
+
+
 
 
 

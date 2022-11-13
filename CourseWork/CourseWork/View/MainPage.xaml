@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:model="clr-namespace:CourseWork.Model"
+             xmlns:model="clr-namespace:CourseWork.Model"            
              xmlns:viewmodel="clr-namespace:CourseWork.ViewModel"
              x:DataType="viewmodel:PatientViewModel"
              x:Class="CourseWork.MainPage">
@@ -64,16 +64,17 @@
             <CollectionView WidthRequest="1040"
                             HeightRequest="600"
                             ItemsSource="{Binding Patients}"
-                            SelectionMode="Single">
+                            SelectionMode="Single"
+                            SelectedItem="{Binding selectedPatient}">
                 <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:PatientModel">
                     <Grid ColumnDefinitions="*,*,*,*,*,*">
-                        <Label BackgroundColor="Red"  Grid.Column="0" Text="{Binding PatientID}"/>
-                        <Label  BackgroundColor="Green" Grid.Column="1" Text="{Binding Name}"/>
-                        <Label  BackgroundColor="Yellow" Grid.Column="2" Text="{Binding Surname}"/>
-                            <Label  BackgroundColor="Pink" Grid.Column="3" Text="{Binding DateofBirth,StringFormat='0:dd/MM/yyy}'"/>
-                            <Label  BackgroundColor="Khaki" Grid.Column="4" Text="{Binding   }"/>
-                            <Label BackgroundColor="Blue" Grid.Column="5" Text="{Binding }"/>
+                        <Label Grid.Column="0" Text="{Binding PatientID}"/>
+                        <Label Grid.Column="1" Text="{Binding Name}"/>
+                        <Label Grid.Column="2" Text="{Binding Surname}"/>
+                        <Label Grid.Column="3" Text="{Binding DateofBirth,StringFormat='{0:dd/MM/yyy}'}"/>
+                        <Label Grid.Column="4" Text="{Binding Gender}"/>
+                        <Label Grid.Column="5" Text="{Binding Doctor}"/>
                     </Grid>
                 </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -83,8 +84,9 @@
                 <Button Text="Добавить"/>
                 <Button Text="Изменить"/>
                 <Button Text="Удалить"
-                        Command="{Binding StartDemoCommand}"
+                         Command="{Binding DeletePatientCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>
+                       
                 <Button Text="Статистика"/>
 
             </HorizontalStackLayout>
