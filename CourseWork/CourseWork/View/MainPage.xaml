@@ -81,7 +81,9 @@
             </CollectionView>
 
             <HorizontalStackLayout Spacing="50">
-                <Button Text="Добавить"/>
+                <Button Text="Добавить"
+                        Command="{Binding OpenAddNewPatientPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="Изменить"/>
                 <Button Text="Удалить"
                          Command="{Binding DeletePatientCommand}"

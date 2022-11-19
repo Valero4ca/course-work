@@ -3,14 +3,16 @@ using CourseWork.Model;
 using System.Collections.ObjectModel;
 using Bogus;
 using static Bogus.DataSets.Name;
-
+using CourseWork.View.Popups;
+using CommunityToolkit.Maui.Views;
 
 namespace CourseWork.ViewModel
 {
     public partial class PatientViewModel : BaseViewModel
     {
-
-        public ObservableCollection<PatientModel> Patients { get; set; } = new();
+        public AddNewPatient addNewPatientPopup;
+        public PatientModel patient_to_add { get; set; } = new();
+       public ObservableCollection<PatientModel> Patients { get; set; } = new();
 
 
         public PatientModel selectedPatient { get; set; } = new();
@@ -50,12 +52,54 @@ namespace CourseWork.ViewModel
             }
 
 
-            if(Patients.Count==0)
+            if (Patients.Count == 0)
             {
                 return;
             }
             Patients.Remove(selectedPatient);
         }
+
+
+        [RelayCommand]
+        void OpenAddNewPatientPopup()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+            
+            addNewPatientPopup = new AddNewPatient(this);
+            App.Current.MainPage.ShowPopup(addNewPatientPopup);
+        }
+
+
+        [RelayCommand]
+        void AddAddNewPatientPopup()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+            if(patient_to_add!=null)
+            Patients.Add(patient_to_add);
+            addNewPatientPopup.Close();
+        }
+
+            [RelayCommand]
+        void CloseAddNewPatientPopup()
+        {
+
+            if (IsBusy)
+            {
+                return;
+            }
+            addNewPatientPopup.Close();
+            
+        }
+           
+        
+            
+        
     }
 }
      

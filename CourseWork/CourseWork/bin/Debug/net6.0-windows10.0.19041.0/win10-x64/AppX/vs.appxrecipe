@@ -29,7 +29,7 @@
     <AppXManifest Include="D:\course-work\CourseWork\CourseWork\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-13T17:58:09.163</Modified>
+      <Modified>2022-11-17T16:13:13.420</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1079,7 +1079,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\course-work\CourseWork\CourseWork\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\CourseWork.deps.json">
       <PackagePath>CourseWork.deps.json</PackagePath>
-      <Modified>2022-11-13T17:58:08.983</Modified>
+      <Modified>2022-11-17T16:13:12.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.541\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
