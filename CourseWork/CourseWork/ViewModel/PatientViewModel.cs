@@ -81,6 +81,9 @@ namespace CourseWork.ViewModel
                 return;
             }
             if(patient_to_add!=null)
+            {
+                return;
+            }    
             Patients.Add(patient_to_add);
             addNewPatientPopup.Close();
         }

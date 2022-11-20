@@ -24,11 +24,11 @@
             <Label Text="Дата Рождения"/>
             <DatePicker Format="dd/MM/yyyy" Date="{Binding patient_to_add.DateofBirth}"/>
             <Label Text="Пол"/>
-            <Picker Title="Пол"SelectedItem="{Binding patient_to_add.Gender}"/>
-            <Picker.Items>
-                <x:String>Male</x:String>
-                <x:String>Female</x:String>
-            </Picker.Items>
+            <Picker Title="Пол" SelectedItem="{Binding patient_to_add.Gender}"/>
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
             </Picer>
             <Label Text="Семейный терапевт" />
             <Picker Title="Семейный терапевт" SelectedIndex="{Binding patient_to_add.Doctor}"/>
@@ -36,11 +36,12 @@
                 <x:String>Горбачева Е.П.</x:String>
                 <x:String>Кожурова В.М.</x:String>
                 <x:String>Юркевич Н.А.</x:String>
-            </Picker.Items>
+                <Picker/>
+            
             </Picker>
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
-                           Spacing="10">
+                                   Spacing="10">
 
                 <Button Text="Добавить"
                         Command="{Binding AddAddNewPatientPopupCommand}"
