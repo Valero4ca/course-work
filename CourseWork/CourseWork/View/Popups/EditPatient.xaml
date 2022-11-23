@@ -48,7 +48,7 @@
                         Command="{Binding AddAddNewPatientPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="Изменить"
-                        Command="{Binding EditPatientPopupCommand}"
+                        Command="{Binding OpenEditPatientPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}" />
 
                 <Button Text="Отмена"

@@ -90,7 +90,7 @@ namespace CourseWork.ViewModel
             
 
             Patients.Add(patient_to_add);
-            addNewPatientPopup.Close();
+            
 
             patient_to_add = new();
         }
@@ -107,6 +107,22 @@ namespace CourseWork.ViewModel
             patient_to_add = new();
 
         }
+
+        [RelayCommand]
+        void OpenEditPatientPopup()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            editPatientPopup = new EditPatient(this);
+            App.Current.MainPage.ShowPopup(editPatientPopup);
+          
+        }
+
+
+
         [RelayCommand]
         void EditPatient()
         {
@@ -124,11 +140,16 @@ namespace CourseWork.ViewModel
             Patients[index].Name = selectedPatient.Name;
             Patients[index].Surname = selectedPatient.Surname;
             Patients[index].DateofBirth = selectedPatient.DateofBirth;
-            Patients[index].Gender = selectedPatient.Gender;
+           
             Patients[index].Gender = selectedPatient.Gender;
             Patients[index].Doctor = selectedPatient.Doctor;
-            
-           
+
+
+
+
+
+            patient_to_edit = new();
+            addNewPatientPopup.Close();
 
         }
     }
