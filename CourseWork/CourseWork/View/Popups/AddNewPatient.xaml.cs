@@ -7,9 +7,10 @@ namespace CourseWork.View.Popups;
 
 public partial class AddNewPatient : Popup
 {
-	public AddNewPatient(PatientViewModel viewModel,PatientModel patient)
+	public AddNewPatient(PatientViewModel viewModel)
 	{
 		InitializeComponent();
-		BindingContext = viewModel;
+
+        BindingContext = viewModel;
 	}
 }

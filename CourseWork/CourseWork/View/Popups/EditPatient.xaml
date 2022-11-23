@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="CourseWork.View.Popups.EditPatient">
+
+
+
+    <Frame WidthRequest="400"
+           HeightRequest="600"
+           Padding="0">
+
+        <VerticalStackLayout   WidthRequest="250"
+                               HeightRequest="600"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Spacing="10">
+            <Label Text="ID" Margin="0,50,0,0"/>
+            <Entry Text="{Binding selectedPatient.PatientID}"/>
+            <Label Text="Имя"/>
+            <Entry Text="{Binding selectedPatient.Name}"/>
+            <Label Text="Фамилия"/>
+            <Entry Text="{Binding selectedPatient.Surname}"/>
+            <Label Text="Дата Рождения"/>
+            <DatePicker Format="dd/MM/yyyy" Date="{Binding selectedPatient.DateofBirth}"/>
+
+            <Picker Title="Пол" SelectedItem="{Binding selectedPatient.Gender}">
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker Title="Семейный терапевт" SelectedItem="{Binding selectedPatient.Doctor}">
+                <Picker.Items>
+                    <x:String>Горбачева Е.П.</x:String>
+                    <x:String>Кожурова В.М.</x:String>
+                    <x:String>Юркевич Н.А.</x:String>
+                </Picker.Items>
+
+
+            </Picker>
+
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                                   Spacing="10">
+
+                <Button Text="Добавить"
+                        Command="{Binding AddAddNewPatientPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
+                <Button Text="Изменить"
+                        Command="{Binding EditPatientPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
+
+                <Button Text="Отмена"
+                        Command="{Binding CloseAddAddNewPatientPopupCommand}"
+                        IsEnabled="{Binding Close}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Frame>
+
+</toolkit:Popup>

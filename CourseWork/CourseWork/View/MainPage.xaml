@@ -84,7 +84,9 @@
                 <Button Text="Добавить"
                         Command="{Binding OpenAddNewPatientPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>
-                <Button Text="Изменить"/>
+                <Button Text="Изменить"
+                        Command="{Binding EditPatientCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
                 <Button Text="Удалить"
                          Command="{Binding DeletePatientCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>

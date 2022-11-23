@@ -11,8 +11,11 @@ namespace CourseWork.ViewModel
     public partial class PatientViewModel : BaseViewModel
     {
         public AddNewPatient addNewPatientPopup;
+        public EditPatient editPatientPopup;
         public PatientModel patient_to_add { get; set; } = new();
-       public ObservableCollection<PatientModel> Patients { get; set; } = new();
+
+        public PatientModel patient_to_edit { get; set; } = new();
+        public ObservableCollection<PatientModel> Patients { get; set; } = new();
 
 
         public PatientModel selectedPatient { get; set; } = new();
@@ -67,7 +70,7 @@ namespace CourseWork.ViewModel
             {
                 return;
             }
-            
+
             addNewPatientPopup = new AddNewPatient(this);
             App.Current.MainPage.ShowPopup(addNewPatientPopup);
         }
@@ -80,15 +83,19 @@ namespace CourseWork.ViewModel
             {
                 return;
             }
-            if(patient_to_add!=null)
+            if (patient_to_add == null)
             {
                 return;
-            }    
+            }
+            
+
             Patients.Add(patient_to_add);
             addNewPatientPopup.Close();
+
+            patient_to_add = new();
         }
 
-            [RelayCommand]
+        [RelayCommand]
         void CloseAddNewPatientPopup()
         {
 
@@ -97,12 +104,33 @@ namespace CourseWork.ViewModel
                 return;
             }
             addNewPatientPopup.Close();
-            
+            patient_to_add = new();
+
         }
-           
-        
+        [RelayCommand]
+        void EditPatient()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+            if (patient_to_edit == null)
+            {
+                return;
+            }
+
+            var index = Patients.IndexOf(selectedPatient);
+            Patients[index].PatientID = selectedPatient.PatientID;
+            Patients[index].Name = selectedPatient.Name;
+            Patients[index].Surname = selectedPatient.Surname;
+            Patients[index].DateofBirth = selectedPatient.DateofBirth;
+            Patients[index].Gender = selectedPatient.Gender;
+            Patients[index].Gender = selectedPatient.Gender;
+            Patients[index].Doctor = selectedPatient.Doctor;
             
-        
+           
+
+        }
     }
 }
      

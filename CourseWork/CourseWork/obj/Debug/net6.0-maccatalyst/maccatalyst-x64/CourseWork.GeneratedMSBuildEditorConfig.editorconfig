@@ -44,3 +44,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.Popups.AddNewPatient.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Popups\AddNewPatient.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Popups\AddNewPatient.xaml
+
+[D:/course-work/CourseWork/CourseWork/View/Popups/EditPatient.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.Popups.EditPatient.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Popups\EditPatient.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Popups\EditPatient.xaml
