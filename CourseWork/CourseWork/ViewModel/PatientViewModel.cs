@@ -77,7 +77,7 @@ namespace CourseWork.ViewModel
 
 
         [RelayCommand]
-        void AddAddNewPatientPopup()
+        void AddNewPatientPopup()
         {
             if (IsBusy)
             {
@@ -90,9 +90,9 @@ namespace CourseWork.ViewModel
             
 
             Patients.Add(patient_to_add);
-            
-
             patient_to_add = new();
+            addNewPatientPopup.Close();
+
         }
 
         [RelayCommand]
@@ -105,6 +105,7 @@ namespace CourseWork.ViewModel
             }
             addNewPatientPopup.Close();
             patient_to_add = new();
+
 
         }
 
@@ -136,20 +137,23 @@ namespace CourseWork.ViewModel
             }
 
             var index = Patients.IndexOf(selectedPatient);
-            Patients[index].PatientID = selectedPatient.PatientID;
-            Patients[index].Name = selectedPatient.Name;
-            Patients[index].Surname = selectedPatient.Surname;
-            Patients[index].DateofBirth = selectedPatient.DateofBirth;
-           
-            Patients[index].Gender = selectedPatient.Gender;
-            Patients[index].Doctor = selectedPatient.Doctor;
+            Patients[index]= selectedPatient;
 
-
-
-
-
+            
             patient_to_edit = new();
             addNewPatientPopup.Close();
+
+        }
+        [RelayCommand]
+        void CloseEditPatientPopup()
+        {
+
+            if (IsBusy)
+            {
+                return;
+            }
+            editPatientPopup.Close();
+            patient_to_add= new();
 
         }
     }

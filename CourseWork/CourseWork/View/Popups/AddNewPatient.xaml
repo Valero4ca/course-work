@@ -49,8 +49,8 @@
                         IsEnabled="{Binding IsNotBusy}"/>
                 
                 <Button Text="Отмена"
-                        Command="{Binding CloseAddAddNewPatientPopupCommand}"
-                        IsEnabled="{Binding Close}"/>
+                        Command="{Binding CloseAddNewPatientPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
          </Frame>

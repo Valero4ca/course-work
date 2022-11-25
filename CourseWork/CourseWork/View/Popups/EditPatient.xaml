@@ -44,16 +44,14 @@
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
                                    Spacing="10">
 
-                <Button Text="Добавить"
-                        Command="{Binding AddAddNewPatientPopupCommand}"
-                        IsEnabled="{Binding IsNotBusy}"/>
+               
                 <Button Text="Изменить"
                         Command="{Binding OpenEditPatientPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}" />
 
                 <Button Text="Отмена"
-                        Command="{Binding CloseAddAddNewPatientPopupCommand}"
-                        IsEnabled="{Binding Close}"/>
+                        Command="{Binding CloseEditPatientPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </Frame>
