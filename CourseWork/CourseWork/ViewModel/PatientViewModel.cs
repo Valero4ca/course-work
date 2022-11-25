@@ -141,7 +141,7 @@ namespace CourseWork.ViewModel
 
             
             patient_to_edit = new();
-            addNewPatientPopup.Close();
+            editPatientPopup.Close();
 
         }
         [RelayCommand]

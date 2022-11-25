@@ -46,7 +46,7 @@
 
                
                 <Button Text="Изменить"
-                        Command="{Binding OpenEditPatientPopupCommand}"
+                        Command="{Binding EditPatientCommand}"
                         IsEnabled="{Binding IsNotBusy}" />
 
                 <Button Text="Отмена"
