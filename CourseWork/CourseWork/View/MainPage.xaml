@@ -90,8 +90,10 @@
                 <Button Text="Удалить"
                          Command="{Binding DeletePatientCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>
-                       
-                <Button Text="Статистика"/>
+
+                <Button Text="Статистика"
+                      Command="{Binding OpenAnalysisPageCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
 
             </HorizontalStackLayout>
         </VerticalStackLayout>

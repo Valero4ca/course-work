@@ -5,6 +5,7 @@ using Bogus;
 using static Bogus.DataSets.Name;
 using CourseWork.View.Popups;
 using CommunityToolkit.Maui.Views;
+using CourseWork.View;
 
 namespace CourseWork.ViewModel
 {
@@ -155,6 +156,29 @@ namespace CourseWork.ViewModel
             editPatientPopup.Close();
             patient_to_add= new();
 
+        }
+        [RelayCommand]
+        async Task OpenAnalysisPage()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            if(selectedPatient==null)
+            {
+                return;
+            }
+            if(selectedPatient.PatientID==null)
+            {
+                return;
+            }
+            await Shell.Current.GoToAsync(nameof(AnalysisView),
+                new Dictionary<string,object>
+                {
+                    {"Patient",selectedPatient }
+               
+                });
         }
     }
 }

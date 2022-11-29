@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using CourseWork.View;
 using CourseWork.ViewModel;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,6 +21,9 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<PatientViewModel>();
         builder.Services.AddSingleton<MainPage>();
+
+		builder.Services.AddTransient<AnalysisViewModel>();
+        builder.Services.AddTransient<AnalysisView>();
         return builder.Build();
 	}
 }
