@@ -8,6 +8,15 @@
              Title="AnalysisPage">
     <VerticalStackLayout HorizontalOptions="Center"
                          VerticalOptions="Center">
+       
+            <VerticalStackLayout
+            WidthRequest="250"
+            BackgroundColor="Transparent"
+            Spacing="10"
+            Margin="0,0,50,0">
+                <Label Text="Поиск по базе"/>
+                <Entry/>
+        </VerticalStackLayout>
         <Label Text="Пациент"/>
         <Label Text="{Binding patient.PatientID}"/>
         <Label Text="{Binding patient.Name}"/>
