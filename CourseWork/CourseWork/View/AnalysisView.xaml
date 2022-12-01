@@ -13,16 +13,35 @@
             WidthRequest="250"
             BackgroundColor="Transparent"
             Spacing="10"
-            Margin="0,0,50,0">
-                <Label Text="Поиск по базе"/>
+            Margin="0,0,0,0">
+                <Label Text="Список анализов"/>
                 <Entry/>
+            
         </VerticalStackLayout>
         <Label Text="Пациент"/>
+        <Entry/>
         <Label Text="{Binding patient.PatientID}"/>
+        <Entry/>
         <Label Text="{Binding patient.Name}"/>
+        <Entry/>
         <Label Text="{Binding patient.Surname}"/>
+        <Entry/>
         <Label Text="{Binding patient.DateofBirth,StringFormat='{0:dd/MM/yyy}'}"/>
+        <Entry/>
         <Label Text="{Binding patient.Gender}"/>
+        <Entry/>
         <Label Text="{Binding patient.Doctor}"/>
+        <Entry/>
+
+        <Button Text="Добавить"/>
+        <Entry/>
+        <Button Text="Изменить"/>
+        <Entry/>
+        <Button Text="Удалить"/>
+        <Entry/>
+        <Button Text="Экспорт"/>
+        <Entry/>
+        <Button Text="Импорт"/>
+        <Entry/>
     </VerticalStackLayout>
 </ContentPage>

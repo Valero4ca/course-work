@@ -19,7 +19,7 @@
             <Entry/>
             <Label Text="Имя"/>
             <Entry/>
-            <Label Text="Фамилия"/>
+            <Label Text="Фамилия"/> 
             <Entry/>
             <Label Text="Дата Рождения"/>
             <DatePicker/>
