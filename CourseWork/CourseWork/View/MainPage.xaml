@@ -8,45 +8,7 @@
 
     <HorizontalStackLayout HorizontalOptions="Center"
                            VerticalOptions="Center">
-        <VerticalStackLayout
-            WidthRequest="250"
-            BackgroundColor="Transparent"
-            Spacing="10"
-            Margin="0,0,50,0">
-            <Label Text="Поиск по базе"/>
-            <Entry/>
-            <Label Text="ID"/>
-            <Entry/>
-            <Label Text="Имя"/>
-            <Entry/>
-            <Label Text="Фамилия"/> 
-            <Entry/>
-            <Label Text="Дата Рождения"/>
-            <DatePicker/>
-
-            <Picker Title="Пол">
-                <Picker.Items>
-                    <x:String>Женский</x:String>
-                    <x:String>Мужской</x:String>
-                </Picker.Items>
-            </Picker>
-
-            <Picker Title="Семейный Терапевт">
-                <Picker.Items>
-                    <x:String>Горбачева Елена Петровна</x:String>
-                    <x:String>Кожурова Виктория Михайловна</x:String>
-                    <x:String>Юркевич Наталья Александровна</x:String>
-
-                </Picker.Items>
-            </Picker>
-
-           <Button Text="Демо"
-                   Command="{Binding StartDemoCommand}"
-                   IsEnabled="{Binding IsNotBusy}"/>
-
-         </VerticalStackLayout>
-
-        <VerticalStackLayout>
+         <VerticalStackLayout>
 
             <HorizontalStackLayout >
                 <Grid
@@ -81,6 +43,9 @@
             </CollectionView>
 
             <HorizontalStackLayout Spacing="50">
+                <Button Text="Демо"
+                   Command="{Binding StartDemoCommand}"
+                   IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="Добавить"
                         Command="{Binding OpenAddNewPatientPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}"/>

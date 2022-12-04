@@ -10,5 +10,7 @@ namespace CourseWork.Model
     {
         public string PatientID { get; set; }
         public string Doctor{ get; set; }
+
+        public List<Analysis> Analysislist { get; set; }
     }
 }

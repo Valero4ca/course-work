@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 
 namespace CourseWork.Model
 {
     public class Analysis
     {
-        public DateTime Analiza{ get; set; }
-        public string PatientID { get; set; }
-        public string Doctor { get; set; }
-        public string Pocazateli { get; set; }
-
-        public float Obshchiyanaliz { get; set; }
+        public string ID { get; set; }
+        public DateTime DataAnaliza{ get; set; }
         public float Obshchiybilirybin { get; set; }
         public float Nepryamoybilirybin  { get; set; }
         public float Pryamoybilirybin{ get; set; }
