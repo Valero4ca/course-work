@@ -9,6 +9,9 @@
     <MauiXaml Update="View\AnalysisView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="View\Popups\AddNewAnalysis.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="View\Popups\AddNewPatient.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

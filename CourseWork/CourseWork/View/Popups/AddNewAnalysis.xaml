@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="CourseWork.View.Popups.AddNewAnalysis">
+    
+    
+    <Frame WidthRequest="400"
+           HeightRequest="600"
+           Padding="0">
+
+        <VerticalStackLayout   WidthRequest="250"
+                               HeightRequest="600"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Spacing="10">
+            <Label Text="ID" Margin="0,50,0,0"/>
+            <Entry Text="{Binding AnalysisNew.ID}"/>
+          
+            
+            <Label Text="Дата Анализа"/>
+            <DatePicker Format="dd/MM/yyyy" Date="{Binding AnalysisNew.DataAnaliza}"/>
+            <Label Text="Общий билирубин"/>
+            <Entry Text="{Binding AnalysisNew.Obshchiybilirybin}"/>
+            <Label Text="Непрямой билирубин"/>
+            <Entry Text="{Binding AnalysisNew.Nepryamoybilirybin}"/>
+            <Label Text="Прямой билирубин"/>
+            <Entry Text="{Binding AnalysisNew.Pryamoybilirybin}"/>
+            <Label Text="Холестерин"/>
+            <Entry Text="{Binding AnalysisNew.Kholestirin}"/>
+            <Label Text="Глюкоза"/>
+            <Entry Text="{Binding AnalysisNew.Glukoza}"/>
+            
+          <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                                   Spacing="10">
+
+
+                <Button Text="Добавить"
+                        Command="{Binding AddAnalysisNewCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
+
+                <Button Text="Отмена"
+                        Command="{Binding  CloseAnalysisPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Frame>
+
+</toolkit:Popup>

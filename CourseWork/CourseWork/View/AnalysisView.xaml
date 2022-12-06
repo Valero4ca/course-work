@@ -24,13 +24,13 @@
                     </Grid>
                     </HorizontalStackLayout>
 
-                    <CollectionView WidthRequest="300"
+                <CollectionView WidthRequest="300"
                             HeightRequest="300"
                             ItemsSource="{Binding  AnalysisCollection}"
-                            SelectionMode="None"
-                           
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="model:PatientModel">
+                            SelectionMode="None">
+
+                <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Analysis">
                             <Grid ColumnDefinitions="*,*">
                                 <Label Grid.Column="0" Text="{Binding ID}"/>
                             <Label Grid.Column="1" Text="{Binding DataAnaliza,StringFormat='{0:dd/MM/yyy}'}"/>
@@ -40,8 +40,13 @@
                 </CollectionView>
             </VerticalStackLayout>
             <VerticalStackLayout Spacing="10">
-                <Button Text="Добавить"/>
-                <Button Text="Экспорт"/>
+                <Button Text="Добавить"
+                
+                        Command="{Binding OpenAnalysisPopupCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
+
+                
+               
                 <Button Text="Импорт"/>
 
 

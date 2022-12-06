@@ -58,6 +58,9 @@
 	  <MauiXaml Update="View\AnalysisView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\Popups\AddNewAnalysis.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Popups\AddNewPatient.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

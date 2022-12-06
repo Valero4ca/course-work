@@ -14,6 +14,7 @@ namespace CourseWork.ViewModel
     {
         public AddNewPatient addNewPatientPopup;
         public EditPatient editPatientPopup;
+   
         public PatientModel patient_to_add { get; set; } = new();
 
         public PatientModel patient_to_edit { get; set; } = new();
@@ -34,7 +35,7 @@ namespace CourseWork.ViewModel
                 Faker<Analysis> analysis=new Faker<Analysis>()
                     .StrictMode(true)
                     .RuleFor(c => c.ID, f => random.Next().ToString("X8").ToUpper())
-                    .RuleFor(c => c.DataAnaliza, f => f.Date.Between(new DateTime(2004, 1, 1)), DateTime.Today)
+                    .RuleFor(c => c.DataAnaliza, f => f.Date.Between(new DateTime(2004, 1, 1), DateTime.Today))
                     .RuleFor(c => c.Obshchiybilirybin, f => random.NextDouble() *(20.5-0)+0)
                     .RuleFor(c => c.Nepryamoybilirybin, f => random.NextDouble() *(5.1-0)+0)
                     .RuleFor(c => c.Pryamoybilirybin, f => random.NextDouble() *(16.5-0)+0)
@@ -67,7 +68,7 @@ namespace CourseWork.ViewModel
             .RuleFor(c => c.DateofBirth, f => f.Date.Between(new DateTime(1914, 1, 1), new DateTime(2004, 1, 1)))
             .RuleFor(c => c.Gender, f => random_gender.ToString())
             .RuleFor(c => c.Doctor, f => "Петров И.А.")
-            .RuleFor(c => c.AnalysisList, f => GenerateAnalysis(10));
+            .RuleFor(c => c.Analysislist, f => GenerateAnalysis(10));
 
 
             Patients.Add(patient);
@@ -114,8 +115,8 @@ namespace CourseWork.ViewModel
             {
                 return;
             }
-            
 
+            patient_to_add.Analysislist = GenerateAnalysis(10);
             Patients.Add(patient_to_add);
             patient_to_add = new();
             addNewPatientPopup.Close();
@@ -205,6 +206,7 @@ namespace CourseWork.ViewModel
                     {"Patient",selectedPatient }
                
                 });
+            
         }
     }
 }

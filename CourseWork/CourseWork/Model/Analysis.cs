@@ -7,11 +7,11 @@ namespace CourseWork.Model
     {
         public string ID { get; set; }
         public DateTime DataAnaliza{ get; set; }
-        public float Obshchiybilirybin { get; set; }
-        public float Nepryamoybilirybin  { get; set; }
-        public float Pryamoybilirybin{ get; set; }
-        public float Kholestirin { get; set; }
-        public float Glukoza{ get; set; }
+        public double  Obshchiybilirybin { get; set; }
+        public double Nepryamoybilirybin  { get; set; }
+        public double Pryamoybilirybin { get; set; }
+        public double Kholestirin { get; set; }
+        public double Glukoza { get; set; }
 
     }
 }
