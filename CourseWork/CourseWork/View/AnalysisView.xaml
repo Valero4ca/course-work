@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:CourseWork.Model"
              xmlns:viewmodel="clr-namespace:CourseWork.ViewModel"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
              x:DataType="viewmodel:AnalysisViewModel"
              x:Class="CourseWork.View.AnalysisView"
              Title="AnalysisPage">
@@ -26,7 +27,7 @@
 
                 <CollectionView WidthRequest="300"
                             HeightRequest="300"
-                            ItemsSource="{Binding  AnalysisCollection}"
+                            ItemsSource="{Binding AnalysisCollection}"
                             SelectionMode="None">
 
                 <CollectionView.ItemTemplate>
@@ -48,9 +49,109 @@
                         IsEnabled="{Binding IsNotBusy}"/>
             </VerticalStackLayout>
         </VerticalStackLayout>
-        <VerticalStackLayout   WidthRequest="600"
-                               BackgroundColor="LightGray">
-        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Border>
+            <ScrollView HeightRequest="600" 
+                        WidthRequest="1000"
+                        Orientation="Both">
+                <VerticalStackLayout Spacing="20" Margin="10">
 
+                    <!--Общий билирубин-->
+                    <Label Text="Общий билирубин" FontSize="24" FontAttributes="Bold"/>
+                    <chart:SfCartesianChart>
+                        <chart:SfCartesianChart.XAxes>
+                            <chart:CategoryAxis/>
+                        </chart:SfCartesianChart.XAxes >
+                        <chart:SfCartesianChart.YAxes>
+                            <chart:NumericalAxis/>
+                        </chart:SfCartesianChart.YAxes>
+
+                        <chart:SfCartesianChart.Series>
+                            <chart:LineSeries ItemsSource="{Binding AnalysisCollection}"
+                                          XBindingPath="DataAnaliza"
+                                          YBindingPath="Obshchiybilirybin"
+                                          ShowDataLabels="True">
+                            </chart:LineSeries>
+                        </chart:SfCartesianChart.Series>
+                    </chart:SfCartesianChart>
+
+                    <!--Непрямой билирубин-->
+                    <Label Text="Непрямой билирубин" FontSize="24" FontAttributes="Bold"/>
+                    <chart:SfCartesianChart>
+                        <chart:SfCartesianChart.XAxes>
+                            <chart:CategoryAxis/>
+                        </chart:SfCartesianChart.XAxes >
+                        <chart:SfCartesianChart.YAxes>
+                            <chart:NumericalAxis/>
+                        </chart:SfCartesianChart.YAxes>
+
+                        <chart:SfCartesianChart.Series>
+                            <chart:LineSeries ItemsSource="{Binding AnalysisCollection}"
+                                          XBindingPath="DataAnaliza"
+                                          YBindingPath="Nepryamoybilirybin"
+                                          ShowDataLabels="True">
+                            </chart:LineSeries>
+                        </chart:SfCartesianChart.Series>
+                    </chart:SfCartesianChart>
+
+                    <!--Прямой билирубин-->
+                    <Label Text="Прямой билирубин" FontSize="24" FontAttributes="Bold"/>
+                    <chart:SfCartesianChart>
+                        <chart:SfCartesianChart.XAxes>
+                            <chart:CategoryAxis/>
+                        </chart:SfCartesianChart.XAxes >
+                        <chart:SfCartesianChart.YAxes>
+                            <chart:NumericalAxis/>
+                        </chart:SfCartesianChart.YAxes>
+
+                        <chart:SfCartesianChart.Series>
+                            <chart:LineSeries ItemsSource="{Binding AnalysisCollection}"
+                                          XBindingPath="DataAnaliza"
+                                          YBindingPath="Pryamoybilirybin"
+                                          ShowDataLabels="True">
+                            </chart:LineSeries>
+                        </chart:SfCartesianChart.Series>
+                    </chart:SfCartesianChart>
+
+                    <!--Холестрин-->
+                    <Label Text="Холестрин" FontSize="24" FontAttributes="Bold"/>
+                    <chart:SfCartesianChart>
+                        <chart:SfCartesianChart.XAxes>
+                            <chart:CategoryAxis/>
+                        </chart:SfCartesianChart.XAxes >
+                        <chart:SfCartesianChart.YAxes>
+                            <chart:NumericalAxis/>
+                        </chart:SfCartesianChart.YAxes>
+
+                        <chart:SfCartesianChart.Series>
+                            <chart:LineSeries ItemsSource="{Binding AnalysisCollection}"
+                                          XBindingPath="DataAnaliza"
+                                          YBindingPath="Kholestirin"
+                                          ShowDataLabels="True">
+                            </chart:LineSeries>
+                        </chart:SfCartesianChart.Series>
+                    </chart:SfCartesianChart>
+                    <!--Глюкоза-->
+                    <Label Text="Глюкоза" FontSize="24" FontAttributes="Bold"/>
+                    <chart:SfCartesianChart>
+                        <chart:SfCartesianChart.XAxes>
+                            <chart:CategoryAxis/>
+                        </chart:SfCartesianChart.XAxes >
+                        <chart:SfCartesianChart.YAxes>
+                            <chart:NumericalAxis/>
+                        </chart:SfCartesianChart.YAxes>
+
+                        <chart:SfCartesianChart.Series>
+                            <chart:LineSeries ItemsSource="{Binding AnalysisCollection}"
+                                          XBindingPath="DataAnaliza"
+                                          YBindingPath="Glukoza"
+                                          ShowDataLabels="True">
+                            </chart:LineSeries>
+                        </chart:SfCartesianChart.Series>
+                    </chart:SfCartesianChart>
+                </VerticalStackLayout>
+            </ScrollView>
+            </Border>
+        </VerticalStackLayout>
     </HorizontalStackLayout>
 </ContentPage>

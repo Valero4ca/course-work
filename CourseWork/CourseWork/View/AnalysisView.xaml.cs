@@ -5,7 +5,8 @@ public partial class AnalysisView : ContentPage
 {
 	public AnalysisView(AnalysisViewModel viewModel)
 	{
-		InitializeComponent();
+
+        InitializeComponent();
 		BindingContext = viewModel;
 	}
 }

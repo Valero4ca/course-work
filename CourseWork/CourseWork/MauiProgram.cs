@@ -2,6 +2,7 @@
 using CourseWork.View;
 using CourseWork.ViewModel;
 using Microsoft.Extensions.DependencyInjection;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace CourseWork;
 
@@ -13,6 +14,7 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.UseMauiCommunityToolkit()
+			.ConfigureSyncfusionCore()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

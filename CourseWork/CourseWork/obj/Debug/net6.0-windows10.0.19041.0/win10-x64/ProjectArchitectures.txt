@@ -1,1 +1,1 @@
-D:\course-work\CourseWork\CourseWork\CourseWork.csproj;x64
+C:\Users\Kirill Banakh\git-repositories\course-work-lera\CourseWork\CourseWork\CourseWork.csproj;x64
