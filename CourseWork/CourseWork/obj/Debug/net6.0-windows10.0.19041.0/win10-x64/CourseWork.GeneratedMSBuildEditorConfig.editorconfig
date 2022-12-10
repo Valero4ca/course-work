@@ -7,57 +7,57 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseWork
-build_property.ProjectDir = D:\course-work\CourseWork\CourseWork\
+build_property.ProjectDir = C:\Users\Kirill Banakh\git-repositories\course-work-lera\CourseWork\CourseWork\
 
-[D:/course-work/CourseWork/CourseWork/App.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/course-work/CourseWork/CourseWork/AppShell.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/course-work/CourseWork/CourseWork/Resources/Styles/Colors.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/course-work/CourseWork/CourseWork/Resources/Styles/Styles.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/course-work/CourseWork/CourseWork/View/AnalysisView.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/View/AnalysisView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.AnalysisView.xaml
 build_metadata.AdditionalFiles.TargetPath = View\AnalysisView.xaml
 build_metadata.AdditionalFiles.RelativePath = View\AnalysisView.xaml
 
-[D:/course-work/CourseWork/CourseWork/View/MainPage.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/View/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
 
-[D:/course-work/CourseWork/CourseWork/View/Popups/AddNewAnalysis.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/View/Popups/AddNewAnalysis.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.Popups.AddNewAnalysis.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Popups\AddNewAnalysis.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Popups\AddNewAnalysis.xaml
 
-[D:/course-work/CourseWork/CourseWork/View/Popups/AddNewPatient.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/View/Popups/AddNewPatient.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.Popups.AddNewPatient.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Popups\AddNewPatient.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Popups\AddNewPatient.xaml
 
-[D:/course-work/CourseWork/CourseWork/View/Popups/EditPatient.xaml]
+[C:/Users/Kirill Banakh/git-repositories/course-work-lera/CourseWork/CourseWork/View/Popups/EditPatient.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWork.View.Popups.EditPatient.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Popups\EditPatient.xaml

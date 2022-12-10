@@ -15,6 +15,8 @@
           "Microsoft.Maui.Dependencies": "6.0.541",
           "Microsoft.Maui.Extensions": "6.0.541",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
+          "Syncfusion.Maui.Charts": "20.3.60",
+          "Syncfusion.Maui.Core": "20.3.60",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.10",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "6.0.541",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "6.0.541",
@@ -1140,6 +1142,38 @@
           }
         }
       },
+      "Syncfusion.Licensing/20.3.0.60": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.3.0.60",
+            "fileVersion": "20.3.0.60"
+          }
+        }
+      },
+      "Syncfusion.Maui.Charts/20.3.60": {
+        "dependencies": {
+          "Microsoft.Maui.Dependencies": "6.0.541",
+          "Syncfusion.Maui.Core": "20.3.60"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Charts.dll": {
+            "assemblyVersion": "20.3600.0.60",
+            "fileVersion": "20.3600.0.60"
+          }
+        }
+      },
+      "Syncfusion.Maui.Core/20.3.60": {
+        "dependencies": {
+          "Microsoft.Maui.Dependencies": "6.0.541",
+          "Syncfusion.Licensing": "20.3.0.60"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "assemblyVersion": "20.3600.0.60",
+            "fileVersion": "20.3600.0.60"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -1311,6 +1345,27 @@
       "sha512": "sha512-PMJ9oPsUnl5FVaIdDwFscmu2t/NEJcdcuDIIbRuK8+5ZZijtCdfdatKayn2O9SL0ziFysUCoHdMJ+PFbybyxzg==",
       "path": "microsoft.windowsappsdk/1.1.3",
       "hashPath": "microsoft.windowsappsdk.1.1.3.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.3.0.60": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CqgwRK4uKKx/2i9FRzM/N+sym1PqFBeWJglcXsREEQliLaesjsb/++ebSn81MVuoKWusTFNv5TlrqThnXXeUxA==",
+      "path": "syncfusion.licensing/20.3.0.60",
+      "hashPath": "syncfusion.licensing.20.3.0.60.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Charts/20.3.60": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WzYGA9vACbOic6DbJmoJiVOduAmLuxZHOlJAvESua2K+ORke3JwIMduEn/SX3uGrB73ASRPQ7dsbUddoQrQVIw==",
+      "path": "syncfusion.maui.charts/20.3.60",
+      "hashPath": "syncfusion.maui.charts.20.3.60.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Core/20.3.60": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B3uvVN3cBcKH+lZFlw1iTWKs+3UzZdsifers7zRy2AO2P+p7Aws0uYI87TTPMVqlFQwXGQ+SMM4/VdNS3pDfOw==",
+      "path": "syncfusion.maui.core/20.3.60",
+      "hashPath": "syncfusion.maui.core.20.3.60.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "type": "package",

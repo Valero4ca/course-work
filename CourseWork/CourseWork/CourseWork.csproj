@@ -52,6 +52,8 @@
 	  <PackageReference Include="Bogus" Version="34.0.2" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="1.3.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.3.60" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.60" />
 	</ItemGroup>
 
 	<ItemGroup>

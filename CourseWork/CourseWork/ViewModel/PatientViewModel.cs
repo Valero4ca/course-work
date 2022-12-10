@@ -45,7 +45,7 @@ namespace CourseWork.ViewModel
 
                 analysisList.Add(analysis);
             }
-            analysisList.Sort((x, y) => y.DataAnaliza.CompareTo(x.DataAnaliza));
+            analysisList.Sort((x, y) => x.DataAnaliza.CompareTo(y.DataAnaliza));
             return analysisList;
         }
         [RelayCommand]
