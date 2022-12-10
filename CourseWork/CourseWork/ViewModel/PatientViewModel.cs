@@ -23,6 +23,7 @@ namespace CourseWork.ViewModel
 
         public PatientModel selectedPatient { get; set; } = new();
 
+        List<string> doctors = new() { "Горбачева Е.П", "Кожурова В.М.", "Юркевич Н.А." } ;
 
         List<Analysis> GenerateAnalysis(int size)
         {
@@ -67,7 +68,7 @@ namespace CourseWork.ViewModel
             .RuleFor(c => c.Surname, f => f.Name.LastName(random_gender))
             .RuleFor(c => c.DateofBirth, f => f.Date.Between(new DateTime(1914, 1, 1), new DateTime(2004, 1, 1)))
             .RuleFor(c => c.Gender, f => random_gender.ToString())
-            .RuleFor(c => c.Doctor, f => "Петров И.А.")
+            .RuleFor(c => c.Doctor, f => doctors[new Random().Next(doctors.Count)])
             .RuleFor(c => c.Analysislist, f => GenerateAnalysis(10));
 
 

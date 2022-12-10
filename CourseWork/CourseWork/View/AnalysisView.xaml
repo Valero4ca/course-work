@@ -41,16 +41,12 @@
             </VerticalStackLayout>
             <VerticalStackLayout Spacing="10">
                 <Button Text="Добавить"
-                
                         Command="{Binding OpenAnalysisPopupCommand}"
                         IsEnabled="{Binding IsNotBusy}" />
-
-                
-               
-                <Button Text="Импорт"/>
-
-
-        </VerticalStackLayout>
+                <Button Text="Экспорт"
+                        Command="{Binding ExortAnalysesToJSONCommand}"
+                        IsEnabled="{Binding IsNotBusy}"/>
+            </VerticalStackLayout>
         </VerticalStackLayout>
         <VerticalStackLayout   WidthRequest="600"
                                BackgroundColor="LightGray">

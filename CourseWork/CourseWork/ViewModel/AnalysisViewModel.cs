@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.Input;
@@ -52,7 +55,7 @@ namespace CourseWork.ViewModel
 
         }
         
-          [RelayCommand]
+        [RelayCommand]
         void AddAnalysisNew()
         {
             if (IsBusy)
@@ -64,14 +67,37 @@ namespace CourseWork.ViewModel
                 return;
             }
 
-
             AnalysisCollection.Add(AnalysisNew);
-            
 
             addNewAnalysis.Close();
             AnalysisNew = new();
+        }
 
+        [RelayCommand]
+        async void ExortAnalysesToJSON()
+        {
+            if(IsBusy)
+            {
+                return;
+            }
 
+            var encoderSettings = new TextEncoderSettings();
+            encoderSettings.AllowRanges(UnicodeRanges.All);
+
+            var options = new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.Create(encoderSettings) };
+            string jsonStringPatient = JsonSerializer.Serialize(patient, options);
+
+            var filePath = $"C:\\Users\\Kirill Banakh\\Downloads\\Export_{DateTime.Now.ToFileTimeUtc().ToString()}.json";
+
+            FileStream fs = File.Open(filePath, FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
+
+            using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
+            {
+                sw.Write(jsonStringPatient);
+                sw.Flush();
+            }
+            await Application.Current.MainPage.DisplayAlert("Export", $"File was saved: {filePath}", "OK");
+            fs.Close();
         }
     }
 }
